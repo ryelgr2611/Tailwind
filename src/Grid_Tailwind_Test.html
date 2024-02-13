@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    <!-- .col-auto: Establece el ancho de la columna automáticamente basado en su contenido -->
+    <div class="grid grid-cols-3">
+        <div class="col-auto border">Columna 1 (col-auto)</div>
+        <div class="col-auto border">Columna 2 (col-auto)</div>
+        <div class="col-auto border">Columna 3 (col-auto)</div>
+    </div>
+    
+    <!-- .col-span-1 / .col-span-*: Establece el número de columnas que una celda debería ocupar -->
+    <div class="grid grid-cols-3">
+        <div class="col-span-2 border">Ocupa 2 columnas (col-span-2)</div>
+        <div class="col-span-1 border">Ocupa 1 columna (col-span-1)</div>
+    </div>
+    
+    <!-- .col-start-1 / .col-start-*: Establece en qué columna debe empezar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="col-start-2 border">Empieza en columna 2 (col-start-2)</div>
+    </div>
+    
+    <!-- .col-end-1 / .col-end-*: Establece en qué columna debe terminar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="col-start-1 col-end-3 border">Empieza en columna 1 y termina en columna 3 (col-start-1 col-end-3)</div>
+    </div>
+    
+    <!-- .gap-0 / .gap-*: Establece el espacio entre las celdas de la cuadrícula -->
+    <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .row-gap-0 / .row-gap-*: Establece el espacio entre filas en la cuadrícula -->
+    <div class="grid grid-cols-3 row-gap-6">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .col-gap-0 / .col-gap-*: Establece el espacio entre columnas en la cuadrícula -->
+    <div class="grid grid-cols-3 col-gap-8">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .grid-rows-1 / .grid-rows-*: Establece el número de filas en la cuadrícula -->
+    <div class="grid grid-cols-3 grid-rows-2">
+        <div class="col-span-1 row-span-1 border">Columna 1, Fila 1</div>
+        <div class="col-span-1 row-span-2 border">Columna 2, Fila 1 y 2</div>
+        <div class="col-span-1 row-span-1 border">Columna 3, Fila 1</div>
+    </div>
+    
+    <!-- .grid-cols-1 / .grid-cols-*: Establece el número de columnas en la cuadrícula -->
+    <div class="grid grid-cols-3">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .grid-flow-row: Establece el flujo de elementos en la cuadrícula de fila en fila -->
+    <div class="grid grid-cols-3 grid-flow-row">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+        <div class="col-span-1 border">Columna 4</div>
+        <div class="col-span-1 border">Columna 5</div>
+        <div class="col-span-1 border">Columna 6</div>
+    </div>
+    
+    <!-- .grid-flow-row-dense: Establece el flujo de elementos en la cuadrícula de fila en fila, compactando elementos -->
+    <div class="grid grid-cols-3 grid-flow-row-dense">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+        <div class="col-span-1 border">Columna 4</div>
+        <div class="col-span-1 border">Columna 5</div>
+        <div class="col-span-1 border">Columna 6</div>
+    </div>
+    
+    <!-- .grid-flow-col: Establece el flujo de elementos en la cuadrícula de columna en columna -->
+    <div class="grid grid-cols-3 grid-flow-col">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+        <div class="col-span-1 border">Columna 4</div>
+        <div class="col-span-1 border">Columna 5</div>
+        <div class="col-span-1 border">Columna 6</div>
+    </div>
+    
+    <!-- .grid-flow-col-dense: Establece el flujo de elementos en la cuadrícula de columna en columna, compactando elementos -->
+    <div class="grid grid-cols-3 grid-flow-col-dense">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+        <div class="col-span-1 border">Columna 4</div>
+        <div class="col-span-1 border">Columna 5</div>
+        <div class="col-span-1 border">Columna 6</div>
+    </div>
+    
+    <!-- .row-span-1 / .row-span-*: Establece el número de filas que una celda debería ocupar -->
+    <div class="grid grid-cols-3">
+        <div class="row-span-2 border">Ocupa 2 filas (row-span-2)</div>
+        <div class="row-span-1 border">Ocupa 1 fila (row-span-1)</div>
+    </div>
+    
+    <!-- .row-start-auto: Establece en qué fila debe empezar un elemento (automáticamente) -->
+    <div class="grid grid-cols-3">
+        <div class="row-start-auto border">Empieza en la primera fila (row-start-auto)</div>
+    </div>
+    
+    <!-- .row-start-2: Establece en qué fila debe empezar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-start-2 border">Empieza en la segunda fila (row-start-2)</div>
+    </div>
+    
+    <!-- .row-start-3: Establece en qué fila debe empezar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-start-3 border">Empieza en la tercera fila (row-start-3)</div>
+    </div>
+    
+    <!-- .row-start-4: Establece en qué fila debe empezar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-start-4 border">Empieza en la cuarta fila (row-start-4)</div>
+    </div>
+    
+    <!-- .row-start-5: Establece en qué fila debe empezar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-start-5 border">Empieza en la quinta fila (row-start-5)</div>
+    </div>
+    
+    <!-- .row-start-6: Establece en qué fila debe empezar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-start-6 border">Empieza en la sexta fila (row-start-6)</div>
+    </div>
+    
+    <!-- .row-start-7: Establece en qué fila debe empezar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-start-7 border">Empieza en la séptima fila (row-start-7)</div>
+    </div>
+    
+    <!-- .row-end-auto: Establece en qué fila debe terminar un elemento (automáticamente) -->
+    <div class="grid grid-cols-3">
+        <div class="row-end-auto border">Termina en la última fila (row-end-auto)</div>
+    </div>
+    
+    <!-- .row-end-2: Establece en qué fila debe terminar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-end-2 border">Termina en la segunda fila (row-end-2)</div>
+    </div>
+    
+    <!-- .row-end-3: Establece en qué fila debe terminar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-end-3 border">Termina en la tercera fila (row-end-3)</div>
+    </div>
+    
+    <!-- .row-end-4: Establece en qué fila debe terminar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-end-4 border">Termina en la cuarta fila (row-end-4)</div>
+    </div>
+    
+    <!-- .row-end-5: Establece en qué fila debe terminar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-end-5 border">Termina en la quinta fila (row-end-5)</div>
+    </div>
+    
+    <!-- .row-end-6: Establece en qué fila debe terminar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-end-6 border">Termina en la sexta fila (row-end-6)</div>
+    </div>
+    
+    <!-- .row-end-7: Establece en qué fila debe terminar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="row-end-7 border">Termina en la séptima fila (row-end-7)</div>
+    </div>
+    
+    <!-- .auto-cols-auto: Establece el tamaño automático de las columnas -->
+    <div class="grid grid-flow-col auto-cols-auto">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .auto-cols-fr: Establece el tamaño automático de las columnas con la fracción -->
+    <div class="grid grid-flow-col auto-cols-fr">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .auto-cols-max: Establece el tamaño automático máximo de las columnas -->
+    <div class="grid grid-flow-col auto-cols-max">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .auto-cols-min: Establece el tamaño automático mínimo de las columnas -->
+    <div class="grid grid-flow-col auto-cols-min">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .auto-rows-auto: Establece el tamaño automático de las filas -->
+    <div class="grid grid-flow-row auto-rows-auto">
+        <div class="row-span-1 border">Fila 1</div>
+        <div class="row-span-1 border">Fila 2</div>
+        <div class="row-span-1 border">Fila 3</div>
+    </div>
+    
+    <!-- .auto-rows-fr: Establece el tamaño automático de las filas con la fracción -->
+    <div class="grid grid-flow-row auto-rows-fr">
+        <div class="row-span-1 border">Fila 1</div>
+        <div class="row-span-1 border">Fila 2</div>
+        <div class="row-span-1 border">Fila 3</div>
+    </div>
+    
+    <!-- .auto-rows-max: Establece el tamaño automático máximo de las filas -->
+    <div class="grid grid-flow-row auto-rows-max">
+        <div class="row-span-1 border">Fila 1</div>
+        <div class="row-span-1 border">Fila 2</div>
+        <div class="row-span-1 border">Fila 3</div>
+    </div>
+    
+    <!-- .auto-rows-min: Establece el tamaño automático mínimo de las filas -->
+    <div class="grid grid-flow-row auto-rows-min">
+        <div class="row-span-1 border">Fila 1</div>
+        <div class="row-span-1 border">Fila 2</div>
+        <div class="row-span-1 border">Fila 3</div>
+    </div>
+    
+    <!-- .col-end-1: Establece en qué columna debe terminar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="col-start-1 col-end-1 border">Empieza y termina en columna 1 (col-start-1 col-end-1)</div>
+    </div>
+    
+    <!-- .col-end-auto: Establece en qué columna debe terminar un elemento (automáticamente) -->
+    <div class="grid grid-cols-3">
+        <div class="col-start-1 col-end-auto border">Empieza en columna 1 y termina automáticamente (col-start-1 col-end-auto)</div>
+    </div>
+    
+    <!-- .col-span-1: Establece el número de columnas que una celda debería ocupar -->
+    <div class="grid grid-cols-3">
+        <div class="col-span-1 border">Ocupa 1 columna (col-span-1)</div>
+    </div>
+    
+    <!-- .col-span-full: Establece el número de columnas que una celda debería ocupar -->
+    <div class="grid grid-cols-3">
+        <div class="col-span-full border">Ocupa todas las columnas (col-span-full)</div>
+    </div>
+    
+    <!-- .col-start-1: Establece en qué columna debe empezar un elemento -->
+    <div class="grid grid-cols-3">
+        <div class="col-start-1 border">Empieza en columna 1 (col-start-1)</div>
+    </div>
+    
+    <!-- .col-start-auto: Establece en qué columna debe empezar un elemento (automáticamente) -->
+    <div class="grid grid-cols-3">
+        <div class="col-start-auto border">Empieza automáticamente (col-start-auto)</div>
+    </div>
+    
+    <!-- .gap-0: Establece el espacio entre las celdas de la cuadrícula -->
+    <div class="grid grid-cols-3 gap-0">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .gap-px: Establece el espacio entre las celdas de la cuadrícula en píxeles -->
+    <div class="grid grid-cols-3 gap-px">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .gap-x-0: Establece el espacio horizontal entre las celdas de la cuadrícula -->
+    <div class="grid grid-cols-3 gap-x-0">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .gap-x-px: Establece el espacio horizontal entre las celdas de la cuadrícula en píxeles -->
+    <div class="grid grid-cols-3 gap-x-px">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .gap-y-0: Establece el espacio vertical entre las celdas de la cuadrícula -->
+    <div class="grid grid-cols-3 gap-y-0">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .gap-y-px: Establece el espacio vertical entre las celdas de la cuadrícula en píxeles -->
+    <div class="grid grid-cols-3 gap-y-px">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+  
+    <!-- .place-contant-around: Alinea el contenido alrededor del contenedor -->
+    <div class="grid grid-cols-3 place-content-around">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-contant-between: Alinea el contenido entre los elementos del contenedor -->
+    <div class="grid grid-cols-3 place-content-between">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-contant-center: Centra el contenido en el contenedor -->
+    <div class="grid grid-cols-3 place-content-center">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-contant-end: Alinea el contenido al final del contenedor -->
+    <div class="grid grid-cols-3 place-content-end">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-contant-evenly: Distribuye el contenido uniformemente en el contenedor -->
+    <div class="grid grid-cols-3 place-content-evenly">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-contant-start: Alinea el contenido al inicio del contenedor -->
+    <div class="grid grid-cols-3 place-content-start">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-contant-stretch: Estira el contenido para llenar el contenedor -->
+    <div class="grid grid-cols-3 place-content-stretch">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-items-auto: Alinea los elementos automáticamente en el contenedor -->
+    <div class="grid grid-cols-3 place-items-auto">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-items-center: Centra los elementos en el contenedor -->
+    <div class="grid grid-cols-3 place-items-center">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-items-end: Alinea los elementos al final del contenedor -->
+    <div class="grid grid-cols-3 place-items-end">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-items-start: Alinea los elementos al inicio del contenedor -->
+    <div class="grid grid-cols-3 place-items-start">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-items-stretch: Estira los elementos para llenar el contenedor -->
+    <div class="grid grid-cols-3 place-items-stretch">
+        <div class="col-span-1 border">Columna 1</div>
+        <div class="col-span-1 border">Columna 2</div>
+        <div class="col-span-1 border">Columna 3</div>
+    </div>
+    
+    <!-- .place-self-auto: Alinea el elemento automáticamente dentro del contenedor -->
+    <div class="grid grid-cols-3 place-self-auto">
+        <div class="col-span-1 border place-self-auto">Columna 1 (place-self-auto)</div>
+        <div class="col-span-1 border place-self-auto">Columna 2 (place-self-auto)</div>
+        <div class="col-span-1 border place-self-auto">Columna 3 (place-self-auto)</div>
+    </div>
+    
+    <!-- .place-self-end: Alinea el elemento al final dentro del contenedor -->
+    <div class="grid grid-cols-3 place-self-end">
+        <div class="col-span-1 border place-self-end">Columna 1 (place-self-end)</div>
+        <div class="col-span-1 border place-self-end">Columna 2 (place-self-end)</div>
+        <div class="col-span-1 border place-self-end">Columna 3 (place-self-end)</div>
+    </div>
+    
+    <!-- .place-self-start: Alinea el elemento al inicio dentro del contenedor -->
+    <div class="grid grid-cols-3 place-self-start">
+        <div class="col-span-1 border place-self-start">Columna 1 (place-self-start)</div>
+        <div class="col-span-1 border place-self-start">Columna 2 (place-self-start)</div>
+        <div class="col-span-1 border place-self-start">Columna 3 (place-self-start)</div>
+    </div>
+    
+    <!-- .place-self-stretch: Estira el elemento para llenar el contenedor -->
+    <div class="grid grid-cols-3 place-self-stretch">
+        <div class="col-span-1 border place-self-stretch">Columna 1 (place-self-stretch)</div>
+        <div class="col-span-1 border place-self-stretch">Columna 2 (place-self-stretch)</div>
+        <div class="col-span-1 border place-self-stretch">Columna 3 (place-self-stretch)</div>
+    </div>
+    
+    <!-- .row-auto: Establece el alto de la fila automáticamente basado en su contenido -->
+    <div class="grid grid-cols-3">
+        <div class="col-span-1 row-auto border">Fila 1 (row-auto)</div>
+        <div class="col-span-1 row-auto border">Fila 2 (row-auto)</div>
+        <div class="col-span-1 row-auto border">Fila 3 (row-auto)</div>
+    </div>
+    
+    <!-- .row-span-1: Establece el número de filas que una celda debería ocupar -->
+    <div class="grid grid-cols-3">
+        <div class="col-span-1 row-span-2 border">Ocupa 2 filas (row-span-2)</div>
+        <div class="col-span-1 row-span-1 border">Ocupa 1 fila (row-span-1)</div>
+    </div>
+    
+    <!-- .row-span-full: Establece el número de filas que una celda debería ocupar -->
+    <div class="grid grid-cols-3">
+        <div class="col-span-1 row-span-full border">Ocupa todas las filas (row-span-full)</div>
+    </div>
+    
+    
+</body>
+</html>
