@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+   
+<section class="p-10 min-h-screen flex flex-col items-center justify-between bg-gray-200 flex-wrap md:flex-row">
+   
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+    <div class="absolute inset-0 transform hover:rotate-90 hover:scale-75 transition duration-300">
+        <div class="h-full w-full bg-red-300 rounded-lg shadow-2xl flex justify-center items-center">
+            <p class="text-white font-gg font-bold bg-black">Escala</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+    <div class="absolute inset-0 transform origin-left hover:-rotate-45 transition duration-300 flex ">
+        <div class="h-full w-full bg-green-400 rounded-lg shadow-2xl flex justify-center items-center">
+            <p class="text-white font-gg font-bold bg-black">Rotao 45º</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+    <div class="absolute inset-0 transform hover:rotate-90 hover:translate-x-full hover:scale-150 transition duration-300 flex ">
+        <div class="h-full w-full bg-violet-300 rounded-lg shadow-2xl flex justify-center items-center text-center">
+            <p class="text-white font-gg font-bold bg-black">Rotado 90º & crecido</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+    <div class="absolute inset-0 transform hover:skew-y-12 hover:translate-y-10 transition duration-300 flex ">
+        <div class="h-full w-full bg-yellow-300 rounded-lg shadow-2xl flex justify-center items-center">
+            <p class="text-white font-gg font-bold bg-black">Torcido</p>
+        </div>
+    </div>
+    </div>
+</section>
+</body>
+</html>
